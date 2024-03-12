@@ -12,8 +12,9 @@ body {
     margin-bottom: 20px;
 }
 
-ul{
+.container ul{
     list-style-type: none;
+    padding: 0%;
 }
 
 
@@ -83,16 +84,20 @@ footer .container{
     margin-bottom: 5px;
     margin-left: 20px;
     margin-right: 20px;
-    border-color: #232830;
+    border-color: #ffffff;
     padding: 20px;
     border-width: 2px;
-    background-color: #acd476;
+    background-color: #44631b31;
     transition: transform 0.3s ease, margin 0.3s ease;
+    
+    position: relative; /* Isso garante que o con teúdo esteja na frente do pseudo-elemento */
+    z-index: 1; /* Garante que o conteúdo esteja na frente do pseudo-elemento */
+
 }
 
 .repo-item:hover{
-    color: rgb(0, 0, 0);
-    background-color: rgb(135, 201, 240);
+    color: rgb(255, 255, 255);
+    background-color: rgba(80, 153, 196, 0.342);
     margin: 15px;
     transform: scale(1.1);
     
@@ -103,5 +108,12 @@ footer .container{
     overflow-y: auto; /* Adiciona uma barra de rolagem vertical ao container */
     max-height: 400px; 
     width: 900px;
-    overflow-x: hidden;
+    overflow-x: hidden;/* esconde a barra horizontal */
+
+    /* background-color: black; */
+
+    background-image: url('../images/sky.jpg');
+    background-size: cover;
+    position: relative;
+
 }

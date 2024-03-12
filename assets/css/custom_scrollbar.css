@@ -1,0 +1,29 @@
+/* Estilo da primeira barra de rolagem */
+.scrollbar-1::-webkit-scrollbar {
+    width: 12px;
+}
+
+.scrollbar-1::-webkit-scrollbar-track {
+    background: #f1f1f100;
+    border-radius: 10px;
+}
+
+.scrollbar-1::-webkit-scrollbar-thumb {
+    background: #88888831;
+    border-radius: 10px;
+}
+
+/* Estilo da segunda barra de rolagem */
+.scrollbar-2::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollbar-2::-webkit-scrollbar-track {
+    background: #ddd;
+    border-radius: 5px;
+}
+
+.scrollbar-2::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
+}

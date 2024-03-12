@@ -87,16 +87,13 @@ footer .container{
     padding: 20px;
     border-width: 2px;
     background-color: #acd476;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, margin 0.3s ease;
 }
 
 .repo-item:hover{
     color: rgb(0, 0, 0);
     background-color: rgb(135, 201, 240);
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 15px;
     transform: scale(1.1);
     
 }

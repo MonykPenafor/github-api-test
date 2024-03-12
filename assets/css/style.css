@@ -1,0 +1,110 @@
+/*---------------------------------GENERAL COMPONENTS---------------------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.container{
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/* NAV BAR */
+nav a {
+    padding: 10px 20px; 
+}
+#navbar {
+    justify-content: flex-start; /* Align items to the start (left) */
+}
+
+
+/* CARDS-DECKS */
+
+.card-container{
+    width: 30%;
+    box-sizing: border-box;
+    margin: 10px;
+    text-align: justify;
+}
+
+.card-deck{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media (max-width: 800px) {
+    .card-container{
+        width: calc(50% - 20px); /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container{
+        width: 100%; /* Full width for smallest screens */
+    }
+}
+
+
+/* ----------------------------------- SECTIONS ----------------------------------------*/
+
+/* #section_name{
+    background-color: #1b3052;
+} */
+
+/* FOOTER */
+footer{
+    background-color: #232830;
+    display: flex;
+    align-items: center;
+}
+
+footer .container{
+    padding-bottom: 30px;
+}
+
+
+
+.repo-item{
+    color: rgb(0, 0, 0);
+
+    width: 90%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-color: #232830;
+    padding: 20px;
+    border-width: 2px;
+    background-color: #acd476;
+    transition: transform 0.3s ease;
+}
+
+.repo-item:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(135, 201, 240);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transform: scale(1.1);
+    
+}
+
+.repos-container{
+    
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical ao container */
+    max-height: 400px; 
+    width: 900px;
+    overflow-x: hidden;
+}
